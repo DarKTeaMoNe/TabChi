@@ -267,9 +267,7 @@ function process(msg)
           
 تعداد سوپر گروها : ]] .. sgps .. [[
           
-تعداد لینک های ذخیر شده : ]] .. links[[
-          Sudo : @DarKBoZorG
-BoT :  @DarKBoZorG_BoT ]]
+تعداد لینک های ذخیر شده : ]] .. links 
           tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, "md")
         end
       end
