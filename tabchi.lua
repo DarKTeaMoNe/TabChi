@@ -9,8 +9,8 @@ function is_sudo(msg)
   end
   if redis:sismember("tabchi:" .. tabchi_id .. ":sudoers", msg.sender_user_id_) then
     issudo = true
-  end
   return issudo
+  end
 end
 function is_full_sudo(msg)
   local sudoers = {}
@@ -153,7 +153,7 @@ function process(msg)
     tdcli_function({
       ID = "SearchContacts",
       query_ = nil,
-      limit_ = 10000
+      limit_ = 99999999
     }, add_members, {
       chat_id = msg.chat_id_
     })
@@ -163,7 +163,7 @@ function process(msg)
     tdcli_function({
       ID = "SearchContacts",
       query_ = nil,
-      limit_ = 10000
+      limit_ = 99999999
     }, contact_list, {
       chat_id_ = msg.chat_id_
     })
